@@ -39,13 +39,46 @@ footer {
   text-align: center;
 }
 
+.R2-home-btn {
+  margin: 10px auto auto 10px;
+  width: 30px;
+}
+
 .jedi-sith {
   margin-bottom: 40px;
   margin-top: 190px;
   text-align: center;
 }
 
-.jedi {
+.jedi-name {
+  color: blue;
+  margin-bottom: 100px;
+  margin-top: 80px;
+}
+
+.jedi-symbol {
+  color: blue;
+  display: block;
+  font-size: 70px;
+  margin: 40px;
+  text-align: center;
+}
+
+.sith-symbol {
+  color: red;
+  display: block;
+  font-size: 70px;
+  margin: 40px;
+  text-align: center;
+}
+
+.sith-name {
+  color: red;
+  margin-bottom: 100px;
+  margin-top: 80px;
+}
+
+.jedi-sith-btn {
   background: rgb(211, 212, 255);
   background: radial-gradient(
     circle,
@@ -62,7 +95,13 @@ footer {
   transition: margin 0.5s ease-out;
 }
 
-.sith {
+.force-btn-instructions {
+  color: black;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.the-force-btn {
   background: rgb(211, 212, 255);
   background: radial-gradient(
     circle,
@@ -72,11 +111,10 @@ footer {
   border: 9px solid rgb(56, 56, 56);
   border-radius: 15px;
   color: black;
-  padding: 15px 50px;
-  font-size: 70px;
-  font-weight: bolder;
-  margin: 20px;
-  transition: margin 0.5s ease-out;
+  display: block;
+  font-size: 30px;
+  font-weight: 900;
+  padding: 15px 70px;
 }
 
 .jedi:hover {
@@ -87,4 +125,74 @@ footer {
 .sith:hover {
   color: red;
   margin-top: 5px;
+}
+
+.R2-home-btn:hover {
+  animation: swing 0.5s infinite ease-in-out;
+}
+
+@keyframes swing {
+  0%,
+  100% {
+    transform: rotate(-10deg);
+  }
+  20% {
+    transform: scale(0.95);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  80% {
+    transform: scale(0.95);
+  }
+}
+
+.the-force-btn-jedi:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+  box-shadow: 0 0 30px blue;
+  color: blue;
+}
+
+.the-force-btn-sith:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+  box-shadow: 0 0 30px red;
+  color: red;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
 }
