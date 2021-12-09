@@ -1,0 +1,90 @@
+html {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+      132deg,
+      rgba(0, 0, 0, 1) 36%,
+      rgba(211, 212, 255, 1) 46%,
+      rgba(211, 212, 255, 1) 54%,
+      rgba(0, 0, 0, 1) 64%
+    )
+    fixed;
+}
+
+body {
+  background: transparent;
+  color: white;
+  font-family: "Audiowide", cursive;
+}
+
+h1 {
+  font-size: 80px;
+  margin: 40px 20px auto;
+  text-align: center;
+}
+
+h2 {
+  font-size: 40px;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+footer {
+  background: black;
+  bottom: 0;
+  flex-shrink: 0;
+  font-size: 20px;
+  text-align: center;
+}
+
+.jedi-sith {
+  margin-bottom: 40px;
+  margin-top: 190px;
+  text-align: center;
+}
+
+.jedi {
+  background: rgb(211, 212, 255);
+  background: radial-gradient(
+    circle,
+    rgba(211, 212, 255, 1) 4%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  border: 9px solid rgb(56, 56, 56);
+  border-radius: 15px;
+  color: black;
+  font-size: 70px;
+  font-weight: bolder;
+  padding: 15px 50px;
+  margin: 20px;
+  transition: margin 0.5s ease-out;
+}
+
+.sith {
+  background: rgb(211, 212, 255);
+  background: radial-gradient(
+    circle,
+    rgba(211, 212, 255, 1) 4%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  border: 9px solid rgb(56, 56, 56);
+  border-radius: 15px;
+  color: black;
+  padding: 15px 50px;
+  font-size: 70px;
+  font-weight: bolder;
+  margin: 20px;
+  transition: margin 0.5s ease-out;
+}
+
+.jedi:hover {
+  color: blue;
+  margin: 5px;
+}
+
+.sith:hover {
+  color: red;
+  margin-top: 5px;
+}

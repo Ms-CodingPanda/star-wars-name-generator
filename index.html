@@ -10,6 +10,10 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap"
+      rel="stylesheet"
+    />
     <script
       src="https://kit.fontawesome.com/ef6d849bb2.js"
       crossorigin="anonymous"
@@ -18,20 +22,25 @@
     <title>What is your Star Wars name?</title>
   </head>
   <body>
-    <h1>
-      <i class="fab fa-jedi-order"></i>Choose a side<i
-        class="fab fa-galactic-republic"
-      ></i>
-    </h1>
     <div class="container">
-      <div class="jedi-sith">
-        <a href="/jedi.html" class="jedi">Jedi</a>
-        <a href="/sith.html" class="sith">Sith</a>
+      <h1 class="front-page-header">
+        <i class="fab fa-jedi-order jedi-symbol"></i> CHOOSE YOUR SIDE
+        <i class="fab fa-galactic-republic sith-symbol"></i>
+      </h1>
+      <div class="row justify-content-around jedi-sith">
+        <div class="col-md-6">
+          <a href="/jedi.html" class="btn jedi">Jedi</a>
+        </div>
+        <div class="col-md-6">
+          <a href="/sith.html" class="btn sith">Sith</a>
+        </div>
       </div>
     </div>
-    <footer>
-      Built and designed by <em>Vanessa Fadase</em>
-      <a href="#">Open Source</a>
-    </footer>
+    <div class="fixed-bottom">
+      <footer>
+        Built and designed by <em>Vanessa Fadase</em>
+        <a href="#">Open Source</a>
+      </footer>
+    </div>
   </body>
 </html>
